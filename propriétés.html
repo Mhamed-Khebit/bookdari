@@ -580,7 +580,12 @@
 
 /* Fade Animation */
 .property-card { transition: all 0.5s ease; opacity: 1; }
-.property-card.hide { opacity: 0; transform: scale(0.95); pointer-events: none; position: absolute; }
+.property-card.hide {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+  display: none; /* بدل position:absolute بها */
+}
 
 .btn-prop-contact {
   background-color: #060e25df;
@@ -1243,7 +1248,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </a>
                 <p>
                   BOOKDARI est une conciergerie immobilière premium à Kénitra, spécialisée dans la gestion locative courte et longue durée. Nous optimisons vos annonces, photos et tarifs sur Airbnb et Booking, assurons les check-in/out, le ménage hôtelier et la maintenance — pour une expérience client impeccable et des revenus maximisés.</p>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Rue de Khenifra, 10052 Rabat, Maroc</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Kenitra, Maroc</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>+212688427362</p>
                 <p><i class="fa fa-envelope mr-2"></i> bookdari.conciergerie@gmail.com</p>
                 <div class="d-flex justify-content-start mt-4">
